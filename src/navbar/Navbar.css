@@ -1,0 +1,24 @@
+/* Hover underline for links */
+.hover-underline:hover {
+  text-decoration: underline !important;
+}
+
+/* Sticky translucent navbar with blur and shadow */
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1050; /* Keep above all content */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.75); /* Light mode translucent */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Soft border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Cool subtle shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark mode style */
+.navbar-dark.custom-navbar {
+  background-color: rgba(33, 37, 41, 0.75); /* Dark mode translucent */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger in dark mode */
+}
